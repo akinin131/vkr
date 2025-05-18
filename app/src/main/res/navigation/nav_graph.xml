@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.automationofinventory.AuthorizationFragment"
+        android:label="@string/authorization"
+        tools:layout="@layout/fragment_authorization" >
+        <action
+            android:id="@+id/action_firstFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.example.automationofinventory.AdminDashboardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_admin_dashboard" >
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_firstFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/firstFragment" />
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_createNewEmployeeFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/createNewEmployeeFragment" />
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_addWarehouseFragment"
+            app:destination="@id/addWarehouseFragment" />
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_addGoodsFragment"
+            app:destination="@id/addGoodsFragment" />
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_inventoryFragment"
+            app:destination="@id/inventoryFragment" />
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_inventoryReportFragment"
+            app:destination="@id/inventoryReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewEmployeeFragment"
+        android:name="com.example.automationofinventory.CreateNewEmployeeFragment"
+        android:label="Новый сотрудник" >
+        <action
+            android:id="@+id/action_createNewEmployeeFragment_to_adminDashboardFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/adminDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWarehouseFragment"
+        android:name="com.example.automationofinventory.AddWarehouseFragment"
+        android:label="Добавление склада" >
+        <action
+            android:id="@+id/action_addWarehouseFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addGoodsFragment"
+        android:name="com.example.automationofinventory.AddGoodsFragment"
+        android:label="Приход товаров" >
+        <action
+            android:id="@+id/action_addGoodsFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inventoryFragment"
+        android:name="com.example.automationofinventory.InventoryFragment"
+        android:label="Инвентаризация" />
+    <fragment
+        android:id="@+id/inventoryReportFragment"
+        android:name="com.example.automationofinventory.InventoryReportFragment"
+        android:label="Отчеты"
+        tools:layout="@layout/fragment_inventory_report" >
+        <action
+            android:id="@+id/action_inventoryReportFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment" />
+    </fragment>
+
+</navigation>
