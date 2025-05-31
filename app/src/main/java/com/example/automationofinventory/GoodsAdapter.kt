@@ -16,16 +16,16 @@ class GoodsAdapter(private val goodsList: List<GoodsItem>) :
 
     override fun onBindViewHolder(holder: GoodsViewHolder, position: Int) {
         val item = goodsList[position]
-        holder.nameTextView.text = item.name
-        holder.upcTextView.text = "UPC: ${item.upc}"
-        holder.unitTextView.text = "Ед. изм.: ${item.unit}"
+        holder.name.text = item.name
+        holder.upcTw.text = "UPC: ${item.upc}"
+        holder.unit.text = "Ед.изм: ${item.unit}"
     }
 
     override fun getItemCount(): Int = goodsList.size
 
     class GoodsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val nameTextView: TextView = view.findViewById(R.id.nameTextView)
-        val upcTextView: TextView = view.findViewById(R.id.upcTextView)
-        val unitTextView: TextView = view.findViewById(R.id.unitTextView)
+        val name: TextView = view.findViewById(R.id.nameTextView)
+        val upcTw: TextView = view.findViewById(R.id.upcTextView)
+        val unit: TextView = view.findViewById(R.id.unitTextView)
     }
 }

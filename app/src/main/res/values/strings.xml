@@ -14,6 +14,7 @@
 
     <string name="role_admin">Администратор</string>
     <string name="role_user">Сотрудник</string>
+    <string name="voids">Отмена</string>
 
     <string name="role_employee">Сотрудник</string>
     <string name="error_empty_email">Введите email</string>
@@ -24,7 +25,20 @@
     <string name="error_invalid_email">Неверный email</string>
     <string name="role_mismatch">Вы выбрали неверную роль</string>
     <string name="user_not_found">Пользователь не найден</string>
+    <string name="fill_all_fields">Заполните все поля</string>
+    <string name="select">Выбрана роль</string>
+    <string name="create_true">Успешно создан</string>
     <string name="error_database">Ошибка при запросе к базе данных</string>
+    <string name="select_warehouse">Выберите склад</string>
+    <string name="nameless_warehouse">Безымянный склад</string>
+    <string name="warehouse_not_selected">Склад не выбран</string>
+    <string name="warehouse_save">Выберите склад перед сохранением</string>
+    <string name="count">Количество товара</string>
+    <string name="not_found">Количество товара</string>
+    <string name="not_negative">не может быть отрицательным</string>
+    <string name="save">Инвентаризация сохранена</string>
+    <string name="save_inv">Сохранение инвентаризации...</string>
+    <string name="error_loading_products">Ошибка загрузки товаров</string>
 
 
     <string-array name="role_options">

@@ -14,19 +14,19 @@
         android:padding="16dp">
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/goodsNameTextView"
+            android:id="@+id/goods_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:text="Название"
             android:textAppearance="?attr/textAppearanceBodyLarge"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/goodsUnitTextView"
+            app:layout_constraintEnd_toStartOf="@id/goods_unit"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/goodsUnitTextView"
+            android:id="@+id/goods_unit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="шт"
@@ -48,7 +48,7 @@
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/goodsQuantityInput"
+                android:id="@+id/goods_quantity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
